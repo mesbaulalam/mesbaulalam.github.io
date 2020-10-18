@@ -212,6 +212,11 @@ p {
 } */
 
 @media (max-width: 860px) {
+
+  .mesba {
+  width: 350px;
+  border-radius: 50%;
+}
   .cards_wrap  {
     display: block;
     
@@ -223,5 +228,9 @@ p {
 
   .cards_wrap .card_item {
     width: 60%;
+  }
+
+  .cards_wrap .card_bottom {
+    height: auto;
   }
 }
