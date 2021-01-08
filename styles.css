@@ -72,29 +72,28 @@ h1 {
   text-align: center;
 }
 
-p {
+.welcome p {
   font-size: 2.8rem;
   color: #a71d31;
   font-style: italic;
   text-align: center;
 }
 
+.project {
+  background-color: black;
+  color: black;
+}
+
 .heading {
   font-family: "Poppins";
   font-size: 4rem;
-  border-bottom: 0.2rem solid white;
   text-align: center;
-  text-shadow: 0px 10px 10px #234d3c;
   margin-bottom: 30px;
+  color: white;
 }
 
-.project {
-  background-color: darkblue;
-}
-.project img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.heading span {
+  border-bottom: 0.2rem solid white;
 }
 
 .wrapper {
@@ -107,22 +106,22 @@ p {
   flex-wrap: wrap;
 }
 
-.cards_wrap .card_item {
+.cards_wrap {
   width: 33.3%;
   padding: 10px;
 }
 
-.cards_wrap .card_inner {
+.cards_wrap {
   background: black;
 }
 
-.cards_wrap .card_top {
+.cards_wrap {
   width: 100%;
   min-height: 225px;
   padding-bottom: 0;
 }
 
-.cards_wrap .card_bottom {
+.cards_wrap {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -130,7 +129,7 @@ p {
   text-align: center;
 }
 
-.cards_wrap .card_bottom .card_category {
+.cards_wrap {
   text-transform: uppercase;
   text-align: center;
   font-size: xx-large;
@@ -139,18 +138,7 @@ p {
   padding: 10px;
 }
 
-.title {
-  font-size: x-large;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-.title_description {
-  font-size: x-large;
-}
-
-.cards_wrap .card_bottom .card_creator {
+.cards_wrap {
   text-align: center;
 }
 
@@ -199,7 +187,7 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .cards_wrap .card_item {
+  .cards_wrap {
     width: 33.3%;
   }
 }
@@ -213,15 +201,11 @@ p {
     display: block;
   }
 
-  .card_item {
-    margin: auto;
-  }
-
-  .cards_wrap .card_item {
+  .cards_wrap {
     width: 60%;
   }
 
-  .cards_wrap .card_bottom {
+  .cards_wrap {
     height: auto;
   }
 
@@ -231,7 +215,113 @@ p {
     flex-direction: column;
   }
 
-.links div:hover {
-  transform: translateX(8px);
+  .links div:hover {
+    transform: translateX(8px);
+  }
 }
+
+h5 {
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+}
+
+.center {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* End Non-Essential  */
+
+.property-card {
+  height: 25em;
+  width: 20em;
+  flex-basis: 30%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.property-image {
+  height: 11em;
+  width: 100%;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("./Tic-Tac-Toe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description {
+  background-color: #fafafc;
+  height: 14em;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.stack {
+  color: #a71d31;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
+  display: block;
+}
+.property-card:hover .property-image {
+  height: 25em;
+}
+
+.line-break {
+  width: 100%;
+}
+
+@media (max-width: 985px) {
+  .center {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+  .property-card {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+  }
 }
