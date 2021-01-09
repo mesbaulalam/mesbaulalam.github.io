@@ -30,9 +30,9 @@
           <i class="fa fa-bars fa-3x" id="ham"></i>
         </div>
       </div>
-        <div class="responsiveNavItem"><a href="#1">About</a></div>
-        <div class="responsiveNavItem"><a href="#2">Projects</a></div>
-        <div class="responsiveNavItem"><a href="#3">Contact</a></div>
+      <div class="responsiveNavItem"><a href="#1">About</a></div>
+      <div class="responsiveNavItem"><a href="#2">Projects</a></div>
+      <div class="responsiveNavItem"><a href="#3">Contact</a></div>
     </div>
 
     <div id="1" class="welcome">
@@ -201,20 +201,24 @@
   <script>
     var clicked = false;
     var button = document.getElementById("ham");
+    var navBar = document.getElementsByClassName("nav")[0];
     button.onclick = function () {
       if (clicked === false) {
         clicked = true;
-        var items = document.getElementsByClassName("responsiveNavItem")
+        var items = document.getElementsByClassName("responsiveNavItem");
         for (let item of items) {
-          item.style.display = "block"
+          item.style.display = "block";
         }
       } else {
         clicked = false;
-        var items = document.getElementsByClassName("responsiveNavItem")
+        var items = document.getElementsByClassName("responsiveNavItem");
         for (let item of items) {
-          item.style.display = "none"
+          item.style.display = "none";
         }
       }
     };
+    var height = document.getElementById("1");
+    height.style.paddingTop = navBar.offsetHeight + 50 + 'px';
+    height.style.paddingBottom = 50 + 'px'
   </script>
 </html>
