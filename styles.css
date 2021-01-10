@@ -90,6 +90,51 @@ a {
   border-radius: 50%;
 }
 
+.tech {
+  background-color: #2f4353;
+background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.python {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.java {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.typescript {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.react {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.redux {
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.mongo {
+  padding-left: 20px;
+}
+
+.bash {
+  padding-left: 40px;
+}
+
 h1 {
   font-size: 3.8rem;
   font-family: "Raleway", sans-serif;
@@ -112,12 +157,19 @@ h1 {
   font-family: "Poppins";
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 30px;
   color: white;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 2rem;
+  }
 }
 
 .heading span {
   border-bottom: 0.2rem solid white;
+  padding-bottom: 20px;
 }
 
 .wrapper {
@@ -216,7 +268,7 @@ h1 {
   }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1230px) {
   #ham {
     display: block;
   }
@@ -224,16 +276,15 @@ h1 {
   .index div {
     display: none;
   }
-
-  .dev {
-    font-size: 2em;
-  }
 }
 
 @media (max-width: 860px) {
   .mesba {
     width: 350px;
     border-radius: 50%;
+  }
+  .dev {
+    font-size: 2em;
   }
   .cards_wrap {
     display: block;
