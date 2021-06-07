@@ -20,294 +20,293 @@
   </head>
 
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#1">About</a>
+      <a href="#2">Technologies</a>
+      <a href="#3">Projects</a>
+      <a href="#4">Contact</a>
+    </div>
+
     <div class="nav">
       <div class="top">
         <div class="dev" onclick="">&lt;devmesba&gt;</div>
         <div class="index">
-          <div><a href="#1">About</a></div>
-          <div><a href="#2">Technologies</a></div>
-          <div><a href="#3">Projects</a></div>
-          <div><a href="#4">Contact</a></div>
-          <i class="fa fa-bars fa-3x" id="ham"></i>
+          <i class="fa fa-bars fa-3x" id="ham" onclick="openNav()"></i>
         </div>
       </div>
-      <div class="responsiveNavItem"><a href="#1">About</a></div>
-      <div class="responsiveNavItem"><a href="#2">Technologies</a></div>
-      <div class="responsiveNavItem"><a href="#3">Projects</a></div>
-      <div class="responsiveNavItem"><a href="#4">Contact</a></div>
     </div>
 
-    <div id="1" class="welcome">
-      <img src="./static/Formal.jpg" alt="" class="mesba" />
-      <h1>Hi, I am Mesbaul!</h1>
-      <p>A software developer</p>
-    </div>
-
-    <div id="2" class="tech">
-      <div class="heading"><span>Technologies</span></div>
-      <div class="flexbox">
-        <div>
-          <a href="https://www.w3schools.com/html/default.asp" target="_blank"
-            ><img src="./static/html.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.w3schools.com/css/default.asp" target="_blank"
-            ><img src="./static/css.png" alt=""
-          /></a>
-        </div>
-        <div class="python">
-          <a href="https://www.python.org/" target="_blank"
-            ><img src="./static/python.png" alt=""
-          /></a>
-        </div>
-        <div class="java">
-          <a href="https://www.java.com/" target="_blank"
-            ><img src="./static/java.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.javascript.com/" target="_blank"
-            ><img src="./static/javascript.png" alt=""
-          /></a>
-        </div>
-        <div class="typescript">
-          <a href="https://www.typescriptlang.org/" target="_blank"
-            ><img src="./static/typescript.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.cplusplus.com/" target="_blank"
-            ><img src="./static/C++.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.android.com/intl/en_hk/" target="_blank"
-            ><img src="./static/android.png" alt=""
-          /></a>
-        </div>
-        <div class="react">
-          <a href="https://reactjs.org/" target="_blank"
-            ><img src="./static/react.png" alt=""
-          /></a>
-        </div>
-        <div class="redux">
-          <a href="https://redux.js.org/" target="_blank"
-            ><img src="./static/redux.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.djangoproject.com/" target="_blank"
-            ><img src="./static/django.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://nodejs.org/" target="_blank"
-            ><img src="./static/nodejs.png" alt=""
-          /></a>
-        </div>
-        <div class="mongo">
-          <a href="https://www.mongodb.com/" target="_blank"
-            ><img src="./static/mongodb.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://scikit-learn.org/" target="_blank"
-            ><img src="./static/scikitlearn.png" alt=""
-          /></a>
-        </div>
-        <div>
-          <a href="https://git-scm.com/" target="_blank"
-            ><img src="./static/git.png" alt=""
-          /></a>
-        </div>
-        <div class="bash">
-          <a href="https://www.gnu.org/software/bash/" target="_blank"
-            ><img src="./static/bash.png" alt=""
-          /></a>
-        </div>
-
+    <div id="main">
+      <div id="1" class="welcome">
+        <img src="./static/Formal.jpg" alt="" class="mesba" />
+        <h1>Hi, I am Mesbaul!</h1>
+        <p>A software developer</p>
       </div>
-    </div>
 
-    <div id="3" class="project">
-      <div class="heading"><span>Projects</span></div>
-      <div class="wrapper">
-        <div class="center">
-          <div class="property-card">
-            <a href="https://github.com/mesbaulalam/Modulo" target="_blank">
-              <div
-                class="property-image"
-                style="background-image: url('./static/Modulo.jpg')"
-              >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>Modulo</h5>
-              <p>
-                A simple card game where players can win either by having
-                special cards, or the greatest remainder of the sum
-              </p>
-              <div class="stack">Java, XML, Android SDK</div>
-            </div>
+      <div id="2" class="tech">
+        <div class="heading"><span>Technologies</span></div>
+        <div class="flexbox">
+          <div>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+              ><img src="./static/html.png" alt=""
+            /></a>
           </div>
-          <div class="property-card">
-            <a
-              href="https://github.com/mesbaulalam/Tic_Tac_Toe"
-              target="_blank"
-            >
-              <div
-                class="property-image"
-                style="background-image: url('./static/Tic-Tac-Toe.png')"
-              >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>Tic Tac Toe</h5>
-              <p>
-                A multiplayer Tic Tac Toe Game where players can compete against
-                each other.
-              </p>
-              <div class="stack">Java, Java SWING/AWT</div>
-            </div>
+          <div>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"
+              ><img src="./static/css.png" alt=""
+            /></a>
           </div>
-          <div class="property-card">
-            <a
-              href="https://github.com/mesbaulalam/Box-Office-predictor"
-              target="_blank"
-            >
-              <div
-                class="property-image"
-                style="background-image: url('./static/Box\ Office\ Predictor.jpg')"
-              >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>Box Office Predictor</h5>
-              <p>
-                A machine learning model that analyses TMDB Movie Database and
-                predicts a box office revenue for an upcoming film
-              </p>
-              <div class="stack">Python, Seaborn, Numpy, MatPlotLib</div>
-            </div>
+          <div class="python">
+            <a href="https://www.python.org/" target="_blank"
+              ><img src="./static/python.png" alt=""
+            /></a>
           </div>
-          <!-- <div class="line-break"></div> -->
+          <div class="java">
+            <a href="https://www.java.com/" target="_blank"
+              ><img src="./static/java.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.javascript.com/" target="_blank"
+              ><img src="./static/javascript.png" alt=""
+            /></a>
+          </div>
+          <div class="typescript">
+            <a href="https://www.typescriptlang.org/" target="_blank"
+              ><img src="./static/typescript.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.cplusplus.com/" target="_blank"
+              ><img src="./static/C++.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.android.com/intl/en_hk/" target="_blank"
+              ><img src="./static/android.png" alt=""
+            /></a>
+          </div>
+          <div class="react">
+            <a href="https://reactjs.org/" target="_blank"
+              ><img src="./static/react.png" alt=""
+            /></a>
+          </div>
+          <div class="redux">
+            <a href="https://redux.js.org/" target="_blank"
+              ><img src="./static/redux.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.djangoproject.com/" target="_blank"
+              ><img src="./static/django.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://nodejs.org/" target="_blank"
+              ><img src="./static/nodejs.png" alt=""
+            /></a>
+          </div>
+          <div class="mongo">
+            <a href="https://www.mongodb.com/" target="_blank"
+              ><img src="./static/mongodb.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://scikit-learn.org/" target="_blank"
+              ><img src="./static/scikitlearn.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://git-scm.com/" target="_blank"
+              ><img src="./static/git.png" alt=""
+            /></a>
+          </div>
+          <div class="bash">
+            <a href="https://www.gnu.org/software/bash/" target="_blank"
+              ><img src="./static/bash.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-          <div class="property-card">
-            <a
-              href="https://github.com/mesbaulalam/HK-Weather-App"
-              target="_blank"
-            >
-              <div
-                class="property-image"
-                style="background-image: url('./static/Weather.jpg')"
-              >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>HK Weather App</h5>
-              <p>
-                A web application that displays real-time weather data and
-                warnings (if any) in Hong Kong, temperature in different
-                districts, and a 9 day weather forecast
-              </p>
-              <div class="stack">HTML, CSS, Javascript, AJAX</div>
+      <div id="3" class="project">
+        <div class="heading"><span>Projects</span></div>
+        <div class="wrapper">
+          <div class="center">
+            <div class="property-card">
+              <a href="https://github.com/mesbaulalam/Modulo" target="_blank">
+                <div
+                  class="property-image"
+                  style="background-image: url('./static/Modulo.jpg')"
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>Modulo</h5>
+                <p>
+                  A simple card game where players can win either by having
+                  special cards, or the greatest remainder of the sum
+                </p>
+                <div class="stack">Java, XML, Android SDK</div>
+              </div>
             </div>
-          </div>
-          <div class="property-card">
-            <a href="https://hotzoneteamg.herokuapp.com/" target="_blank">
-              <div
-                class="property-image"
-                style="background-image: url('./static/virus.jpg')"
+            <div class="property-card">
+              <a
+                href="https://github.com/mesbaulalam/Tic_Tac_Toe"
+                target="_blank"
               >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>HotZone</h5>
-              <p>
-                An application that enables users to register patients, virus
-                and locations to create confirmed cases. Using the relevant
-                parameters, users can cluster cases based on location, date,
-                time.
-              </p>
-              <div class="stack">Django, Sci-Kit Learn, HTML, CSS</div>
+                <div
+                  class="property-image"
+                  style="background-image: url('./static/Tic-Tac-Toe.png')"
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>Tic Tac Toe</h5>
+                <p>
+                  A multiplayer Tic Tac Toe Game where players can compete
+                  against each other.
+                </p>
+                <div class="stack">Java, Java SWING/AWT</div>
+              </div>
             </div>
-          </div>
-          <div class="property-card">
-            <a
-              href="https://github.com/mesbaulalam/RedditClone"
-              target="_blank"
-            >
-              <div
-                class="property-image"
-                style="background-image: url('./static/social.jpg')"
+            <div class="property-card">
+              <a
+                href="https://github.com/mesbaulalam/Box-Office-predictor"
+                target="_blank"
               >
-                <div class="property-image-title"></div></div
-            ></a>
-            <div class="property-description">
-              <h5>Reddev</h5>
-              <p>
-                A reddit clone where users can login/sign up and ask questions
-                related to Computer Science. Questions can be upvoted/downvoted
-                and answered by other existing users. Questions can also be
-                filtered by topic or number of upvotes.
-              </p>
-              <div class="stack">React, Express, NodeJS, MongoDB</div>
+                <div
+                  class="property-image"
+                  style="
+                    background-image: url('./static/Box\ Office\ Predictor.jpg');
+                  "
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>Box Office Predictor</h5>
+                <p>
+                  A machine learning model that analyses TMDB Movie Database and
+                  predicts a box office revenue for an upcoming film
+                </p>
+                <div class="stack">Python, Seaborn, Numpy, MatPlotLib</div>
+              </div>
+            </div>
+            <!-- <div class="line-break"></div> -->
+
+            <div class="property-card">
+              <a
+                href="https://github.com/mesbaulalam/HK-Weather-App"
+                target="_blank"
+              >
+                <div
+                  class="property-image"
+                  style="background-image: url('./static/Weather.jpg')"
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>HK Weather App</h5>
+                <p>
+                  A web application that displays real-time weather data and
+                  warnings (if any) in Hong Kong, temperature in different
+                  districts, and a 9 day weather forecast
+                </p>
+                <div class="stack">HTML, CSS, Javascript, AJAX</div>
+              </div>
+            </div>
+            <div class="property-card">
+              <a href="https://hotzoneteamg.herokuapp.com/" target="_blank">
+                <div
+                  class="property-image"
+                  style="background-image: url('./static/virus.jpg')"
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>HotZone</h5>
+                <p>
+                  An application that enables users to register patients, virus
+                  and locations to create confirmed cases. Using the relevant
+                  parameters, users can cluster cases based on location, date,
+                  time.
+                </p>
+                <div class="stack">Django, Sci-Kit Learn, HTML, CSS</div>
+              </div>
+            </div>
+            <div class="property-card">
+              <a
+                href="https://github.com/mesbaulalam/RedditClone"
+                target="_blank"
+              >
+                <div
+                  class="property-image"
+                  style="background-image: url('./static/social.jpg')"
+                >
+                  <div class="property-image-title"></div></div
+              ></a>
+              <div class="property-description">
+                <h5>Reddev</h5>
+                <p>
+                  A reddit clone where users can login/sign up and ask questions
+                  related to Computer Science. Questions can be
+                  upvoted/downvoted and answered by other existing users.
+                  Questions can also be filtered by topic or number of upvotes.
+                </p>
+                <div class="stack">React, Express, NodeJS, MongoDB</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="4" class="footer">
-      <div class="contact">Feel free to contact me!</div>
-      <div class="links">
-        <div>
-          <a href="https://www.facebook.com/mesbaul.alam.52/" target="_blank"
-            ><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/mesbaulalam/" target="_blank"
-            ><i class="fa fa-github" aria-hidden="true"></i>Github
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/mesbaul-alam-khan-87335b191/"
-            target="_blank"
-            ><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn
-          </a>
-        </div>
-        <div>
-          <a href="mailto: mesbaul.a.khan@gmail.com" target="_blank"
-            ><i class="fa fa-envelope-o" aria-hidden="true"></i>Email
-          </a>
+      <div id="4" class="footer">
+        <div class="contact">Feel free to contact me!</div>
+        <div class="links">
+          <div>
+            <a href="https://www.facebook.com/mesbaul.alam.52/" target="_blank"
+              ><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/mesbaulalam/" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i>Github
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/mesbaul-alam-khan-87335b191/"
+              target="_blank"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn
+            </a>
+          </div>
+          <div>
+            <a href="mailto: mesbaul.a.khan@gmail.com" target="_blank"
+              ><i class="fa fa-envelope-o" aria-hidden="true"></i>Email
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </body>
 
   <script>
-    var clicked = false;
-    var button = document.getElementById("ham");
-    var navBar = document.getElementsByClassName("nav")[0];
-    button.onclick = function () {
-      if (clicked === false) {
-        clicked = true;
-        var items = document.getElementsByClassName("responsiveNavItem");
-        for (let item of items) {
-          item.style.display = "block";
-        }
-      } else {
-        clicked = false;
-        var items = document.getElementsByClassName("responsiveNavItem");
-        for (let item of items) {
-          item.style.display = "none";
-        }
-      }
-    };
     var height = document.getElementById("1");
+    var navBar = document.getElementsByClassName("nav")[0];
+
     height.style.paddingTop = navBar.offsetHeight + 50 + "px";
     height.style.paddingBottom = 50 + "px";
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
   </script>
 </html>
