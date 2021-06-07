@@ -70,6 +70,7 @@ body {
 .dev {
   font-size: 4rem;
   color: black;
+  padding-left: 10px;
 }
 
 .index {
