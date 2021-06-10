@@ -44,9 +44,8 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  left: 0;
   font-size: 36px;
-  margin-left: 50px;
 }
 
 .nav {
@@ -279,7 +278,7 @@ h1 {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 2rem;
   }
@@ -556,6 +555,14 @@ p {
 
 .timeline li {
   font-size: larger;
+}
+
+.timeline img{
+    height: 50px;
+}
+
+.timeline h1{
+    text-align: left;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
